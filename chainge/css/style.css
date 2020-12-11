@@ -20,7 +20,12 @@ body {
     background-color: var(--white);
 }
 
+p {
+    margin: 0.4rem;
+}
+
 footer {
+    padding: 10vw;
     background-color: var(--black);
     color: var(--white);
     font-family: var(--body-font);
@@ -28,6 +33,17 @@ footer {
     flex-direction: column;
     align-items: center;
     font-weight: 300;
+}
+
+#contact-icons-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#contact-icon {
+    max-width: 15vw;
+    margin-bottom: 1rem;
 }
 
 /* DESKTOP DESIGN */
