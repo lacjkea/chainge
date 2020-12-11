@@ -3,18 +3,32 @@
 </style> 
 
 :root {
-    --main-color: #8dc04b;
-    --accent-color: #f5ea5a;
+    --primary-green: #8dc04b;
+    --yellow: #f5ea5a;
 
-    --font-color: #2c3029;
+    --black: #2c3029;
 
-    --background-color: #f9f8f7;
+    --white: #f9f8f7;
 
-    --background-color-secondary: #49702c;
-    --background-color-terciary: #c7dda3;
+    --secondary-green: #49702c;
+    --terciary-green: #c7dda3;
 
-    --font-body: 'Source Sans Pro', sans-serif;
-    --font-headers: 'Open Sans', sans-serif;
+    --body-font: 'Source Sans Pro', sans-serif;
+    --header-font: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: var(--white);
+}
+
+footer {
+    background-color: var(--black);
+    color: var(--white);
+    font-family: var(--body-font);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* DESKTOP DESIGN */
