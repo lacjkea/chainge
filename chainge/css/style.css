@@ -82,7 +82,7 @@ p {
     font-weight: 300;
 }
 
-footer {
+#footer-mobile {
     padding: 10vw;
     background-color: var(--black);
     color: var(--white);
@@ -106,6 +106,10 @@ footer {
 
 /* DESKTOP DESIGN */
 @media only screen and (min-width: 899px) {
+
+    #footer-mobile {
+        display: none;
+    }
 
 }
 
