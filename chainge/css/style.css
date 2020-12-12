@@ -36,6 +36,13 @@ h2 {
     font-family: var(--header-font);
 }
 
+h3 {
+    font-size: 8rem;
+    font-family: var(--body-font);
+    font-weight: 100;
+    margin: 0 0 1vw 0;
+}
+
 p {
     font-family: var(--body-font);
     font-weight: 300;
@@ -220,6 +227,27 @@ p {
         font-size: 2vw;
         font-weight: 500;
         text-align: center;
+    }
+
+    #footer-desktop {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 6vw 0;
+    }
+
+    #ig-icon-footer {
+        width: 3vw;
+        padding: 0 0.8vw 0 0;
+    }
+
+    #ig-contact {
+        display: flex;
+        align-items: center;
+    }
+
+    #logo-footer {
+        width: 9vw;
     }
 
 }
