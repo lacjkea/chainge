@@ -1,3 +1,18 @@
+/*
+
+THE STRUCTURE OF THIS SHEET:
+
+    - Style (fonts and root elements)
+
+    -general style (style for headers, paragraphs, etc.)
+
+    -All the things for the mobile version ONLY
+
+    -All the things for the DESKTOP version ONLY
+
+    -Classes ( for changing colour background or animations with js)
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 
 :root {
@@ -16,12 +31,16 @@
 }
 
 /* GENERAL STYLES */
+
 h2 {
     font-family: var(--header-font);
 }
 
 p {
     font-family: var(--body-font);
+    font-weight: 300;
+    font-size: 0.9rem;
+    line-height: 1.5;
 }
 
 /* MOBILE VERSION */
@@ -32,7 +51,31 @@ body {
 }
 
 p {
-    margin: 0.4rem;
+    margin: 0.4rem 8vw;
+    text-align: center;
+}
+
+#text-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+#text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#quote-container {
+    padding: 2rem 0;
+    margin: 2rem 0;
+    background-color: var(--terciary-green);
+}
+
+#quote {
+    font-size: 1.1rem;
+    font-weight: 300;
 }
 
 footer {
@@ -61,4 +104,6 @@ footer {
 @media only screen and (min-width: 899px) {
 
 }
+
+/* ALL CLASSES */
 
