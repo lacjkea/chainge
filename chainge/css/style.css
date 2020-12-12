@@ -4,7 +4,7 @@ THE STRUCTURE OF THIS SHEET:
 
     - Style (fonts and root elements)
 
-    -general style (style for headers, paragraphs, etc.)
+    -general style: put here styles that apply both to the mobile and the desktop version
 
     -All the things for the mobile version ONLY
 
@@ -30,7 +30,7 @@ THE STRUCTURE OF THIS SHEET:
     --header-font: 'Open Sans', sans-serif;
 }
 
-/* GENERAL STYLES */
+/* GENERAL STYLES put here styles that apply both to the mobile and the desktop version*/
 
 h2 {
     font-family: var(--header-font);
@@ -41,6 +41,10 @@ p {
     font-weight: 300;
     font-size: 0.9rem;
     line-height: 1.5;
+}
+
+header {
+    background-color: rgba(255,255,255,0.5);
 }
 
 /* MOBILE VERSION */
