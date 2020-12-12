@@ -170,6 +170,8 @@ p {
 
     #round-img {
     display: block;
+        border-radius: 50%;
+        width: 16vw;
 }
 
 }
