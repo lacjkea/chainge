@@ -129,6 +129,7 @@ p {
     #header-desktop {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         padding: 1vw 2vw;
     }
 
@@ -136,6 +137,11 @@ p {
         width: 40vw;
         display: flex;
         justify-content: space-around;
+
+    }
+
+    #alternate-logo-desktop {
+        width: 10vw;
     }
 
     header nav ul li {
