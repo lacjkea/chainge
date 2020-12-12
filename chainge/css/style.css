@@ -111,6 +111,11 @@ p {
 
 /* ALL CLASSES */
 
+/* use this class whenever you need the container to be as wide as its content */
+.fit-content {
+    width: fit-content;
+}
+
 /*
 .round-img {
     border-radius: 100%;
