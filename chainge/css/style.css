@@ -15,6 +15,17 @@
     --header-font: 'Open Sans', sans-serif;
 }
 
+/* GENERAL STYLES */
+h2 {
+    font-family: var(--header-font);
+}
+
+p {
+    font-family: var(--body-font);
+}
+
+/* MOBILE VERSION */
+
 body {
     margin: 0;
     background-color: var(--white);
