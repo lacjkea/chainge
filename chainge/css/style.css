@@ -58,6 +58,11 @@ nav ul li {
     font-weight: 700;
 }
 
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
 /* MOBILE VERSION */
 
 body {
@@ -136,8 +141,15 @@ p {
     #nav-ul-desktop {
         width: 40vw;
         display: flex;
-        justify-content: space-around;
+        justify-content: flex-end;
+    }
 
+    li {
+        padding: 1vw 2vw;
+    }
+
+    li:hover {
+        background-color: var(--terciary-green);
     }
 
     #alternate-logo-desktop {
