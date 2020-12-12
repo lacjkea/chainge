@@ -43,6 +43,10 @@ p {
     line-height: 1.5;
 }
 
+div {
+    width: fit-content;
+}
+
 /* MOBILE VERSION */
 
 body {
@@ -103,11 +107,12 @@ footer {
 /* DESKTOP DESIGN */
 @media only screen and (min-width: 899px) {
 
-    p {
-        text-align: left;
-    }
-
 }
 
 /* ALL CLASSES */
 
+/*
+.round-img {
+    border-radius: 100%;
+}
+*/
