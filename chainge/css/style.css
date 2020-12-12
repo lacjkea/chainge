@@ -85,6 +85,10 @@ p {
     align-content: center;
 }
 
+#round-img {
+    display: none;
+}
+
 #text {
     display: flex;
     flex-direction: column;
@@ -163,6 +167,10 @@ p {
     #header-mobile {
         display: none;
     }
+
+    #round-img {
+    display: block;
+}
 
 }
 
