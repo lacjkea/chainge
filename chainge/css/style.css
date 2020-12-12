@@ -173,6 +173,10 @@ p {
     width: fit-content;
 }
 
+.hide {
+    display: none;
+}
+
 /*
 .round-img {
     border-radius: 100%;
