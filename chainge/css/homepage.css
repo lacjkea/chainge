@@ -94,6 +94,10 @@ body {
     background-color: var(--white);
 }
 
+section {
+    z-index: -1;
+}
+
 p {
     margin: 0.4rem 8vw;
     text-align: center;
@@ -147,11 +151,13 @@ p {
 }
 
 #mobile-menu-icons {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
     margin: 0;
+    z-index: 100;
 }
 
 #burger-menu {
@@ -162,6 +168,12 @@ p {
     width: 2.4rem;
     position: absolute;
     left: 87vw;
+}
+
+#nav-mobile {
+    position: absolute;
+    width: 100vw;
+
 }
 
 #nav-ul-mobile {
@@ -285,7 +297,7 @@ p {
 
 }
 
-/* ALL CLASSES */
+/* ALL CLASSES and ANIMATIONS */
 
 /* use this class whenever you need the container to be as wide as its content */
 .fit-content {
@@ -300,9 +312,46 @@ p {
     background-color: var(--terciary-green);
 }
 
-.slide-down {
-
+.white-background {
+    background-color: var(--white);
 }
+
+.slide-down {
+    animation: slide-down_KF;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-down_KF {
+
+    0% {
+        top: -100vw;
+    }
+
+    100% {
+        top: 20vw;
+    }
+}
+
+.slide-up {
+    animation: slide-up_KF;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-up_KF {
+
+    0% {
+        top: 20vw;
+    }
+
+    100% {
+        top: -100vw;
+    }
+}
+
 
 /*
 .round-img {
