@@ -150,6 +150,7 @@ p {
     display: flex;
     justify-content: space-between;
     padding: 1rem;
+    margin: 0;
 }
 
 #burger-menu {
@@ -158,6 +159,7 @@ p {
 
 #nav-ul-mobile {
     padding: 0;
+    margin: 0;
 }
 
 #nav-ul-mobile li{
