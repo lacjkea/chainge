@@ -1,0 +1,333 @@
+/*
+
+THE STRUCTURE OF THIS SHEET:
+
+    - Style (fonts and root elements)
+
+    -general style: put here styles that apply both to the mobile and the desktop version
+
+    -All the things for the mobile version ONLY
+
+    -All the things for the DESKTOP version ONLY
+
+    -Classes ( for changing colour background or animations with js)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+:root {
+    --primary-green: #8dc04b;
+    --yellow: #f5ea5a;
+
+    --black: #2c3029;
+
+    --white: #f9f8f7;
+
+    --secondary-green: #49702c;
+    --terciary-green: #c7dda3;
+
+    --body-font: 'Source Sans Pro', sans-serif;
+    --header-font: 'Open Sans', sans-serif;
+}
+
+/* GENERAL STYLES put here styles that apply both to the mobile and the desktop version*/
+
+h2 {
+    font-family: var(--header-font);
+}
+
+h3 {
+    font-size: 8rem;
+    font-family: var(--body-font);
+    font-weight: 100;
+    margin: 0 0 1vw 0;
+}
+
+p {
+    font-family: var(--body-font);
+    font-weight: 300;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+ul {
+    list-style: none;
+}
+
+nav ul li {
+    font-family: var(--body-font);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+#text-container {
+    margin: 8vw 0;
+}
+
+#quote-container {
+    margin: 8vw 0;
+}
+
+footer {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+/* MOBILE VERSION */
+
+.hide-from-mobile {
+    display: none;
+}
+
+body {
+    margin: 0;
+    background-color: var(--white);
+}
+
+section {
+    z-index: -1;
+}
+
+p {
+    margin: 0.4rem 8vw;
+    text-align: center;
+}
+
+#text-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+#text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer-mobile {
+    padding: 10vw;
+    font-family: var(--body-font);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 300;
+}
+
+#contact-icons-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#contact-icon {
+    max-width: 15vw;
+    margin-bottom: 1rem;
+}
+
+#main-logo-mobile {
+    width: 20vw;
+}
+
+#mobile-menu-icons {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin: 0;
+    z-index: 100;
+}
+
+#burger-menu {
+    width: 2.4rem;
+}
+
+#close-burger-menu {
+    width: 2.4rem;
+    position: absolute;
+    left: 87vw;
+}
+
+#nav-mobile {
+    position: absolute;
+    width: 100vw;
+
+}
+
+#nav-ul-mobile {
+    padding: 0;
+    margin: 0;
+}
+
+#nav-ul-mobile li{
+    padding: 1.8rem 0;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* DESKTOP DESIGN */
+@media only screen and (min-width: 899px) {
+
+    .hide-from-mobile {
+        display: block;
+    }
+
+    #footer-mobile {
+        display: none;
+    }
+
+    #header-desktop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1vw 2vw;
+    }
+
+    #nav-ul-desktop {
+        width: 40vw;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    li {
+        padding: 1vw 2vw;
+    }
+
+    li:hover {
+        background-color: var(--terciary-green);
+    }
+
+    #alternate-logo-desktop {
+        width: 15vw;
+    }
+
+    header nav ul li {
+        font-size: 0.8vw;
+    }
+
+    #header-mobile {
+        display: none;
+    }
+
+    #paragraph-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #text {
+        width: 30vw;
+        align-items: flex-start;
+        margin: 0 0 0 12vw;
+    }
+
+    h2 {
+        font-size: 6rem;
+    }
+
+    p {
+        font-size: 4rem;
+        text-align: left;
+        margin: 0;
+    }
+
+    #space-after-paragraph {
+        display: block;
+        margin-top: 1vw;
+    }
+
+    #footer-desktop {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 6vw 0;
+    }
+
+    #ig-icon-footer {
+        width: 2.4vw;
+        padding: 0 0.8vw 0 0;
+    }
+
+    #ig-contact {
+        display: flex;
+        align-items: center;
+    }
+
+    #logo-footer {
+        width: 9vw;
+    }
+
+}
+
+/* ALL CLASSES and ANIMATIONS */
+
+/* use this class whenever you need the container to be as wide as its content */
+.fit-content {
+    width: fit-content;
+}
+
+.hide {
+    display: none;
+}
+
+.green-background {
+    background-color: var(--terciary-green);
+}
+
+.white-background {
+    background-color: var(--white);
+}
+
+.slide-down {
+    animation: slide-down_KF;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-down_KF {
+
+    0% {
+        top: -100vw;
+    }
+
+    100% {
+        top: 20vw;
+    }
+}
+
+.slide-up {
+    animation: slide-up_KF;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-up_KF {
+
+    0% {
+        top: 20vw;
+    }
+
+    100% {
+        top: -100vw;
+    }
+}
+
+
+/*
+.round-img {
+    border-radius: 100%;
+}
+*/
