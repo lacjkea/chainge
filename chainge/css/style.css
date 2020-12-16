@@ -182,7 +182,6 @@ p {
 }
 
 .homepage #map-container h2 {
-    margin-bottom: 4rem;
     width: 70vw;
 }
 
@@ -203,6 +202,10 @@ p {
     position: absolute;
     top: 0;
     z-index: -1;
+}
+
+section {
+    margin: 8vw 0;
 }
 
 /* DESKTOP DESIGN */
@@ -336,14 +339,9 @@ p {
         width: 9vw;
     }
 
-    section {
-        margin: 8vw 0;
-    }
-
     .section-margin {
-        margin: 0 20vw;
-    }
-
+    margin: 0 20vw;
+}
 }
 
 /* ALL CLASSES and ANIMATIONS */
