@@ -202,6 +202,17 @@ footer {
     width: 100%;
 }
 
+.partners #partner-logo {
+    width: 80%;
+    margin: 12vw 0;
+}
+
+.partners #partners-logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 /* DESKTOP DESIGN */
 @media only screen and (min-width: 899px) {
@@ -349,6 +360,17 @@ footer {
         top: -23vw;
         z-index: -1;
     }
+
+    .partners #partner-logo {
+    width: 20%;
+    margin: 0;
+}
+
+.partners #partners-logos {
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2vw 0;
+}
 }
 
 /* ALL CLASSES and ANIMATIONS */
