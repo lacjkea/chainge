@@ -83,6 +83,8 @@ p {
 .homepage #text-container {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    padding-bottom: 8vw;
+    padding-top: 8vw;
 }
 
 .columns {
@@ -213,6 +215,18 @@ footer {
     align-items: center;
 }
 
+.about #text-container {
+    background-color: var(--terciary-green);
+}
+
+.partners #text-container {
+    background-color: var(--terciary-green);
+}
+
+.community #text-container {
+    background-color: var(--terciary-green);
+}
+
 
 /* DESKTOP DESIGN */
 @media only screen and (min-width: 899px) {
@@ -298,8 +312,8 @@ footer {
     }
 
     .section-margin {
-        margin-left: 10vw;
-        margin-right: 10vw;
+        padding-left: 10vw;
+        padding-right: 10vw;
     }
 
     .margin-bottom {
