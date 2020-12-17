@@ -287,7 +287,7 @@ footer {
         margin-right: 10vw;
     }
 
-     .margin-bottom {
+    .margin-bottom {
         margin-bottom: 8vw;
     }
 
@@ -297,6 +297,21 @@ footer {
 
     .yellow-background {
         background-color: var(--yellow);
+    }
+
+    .community #contact-us {
+        padding-left: 12vw;
+        padding-right: 12vw;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .community #contact-us #quote {
+        width: 40vw;
+    }
+
+    .community #mail-icon {
+        width: 6vw;
     }
 }
 
