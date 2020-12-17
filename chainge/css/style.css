@@ -190,14 +190,6 @@ footer {
 /* DESKTOP DESIGN */
 @media only screen and (min-width: 899px) {
 
-    .margin-bottom {
-        margin-bottom: 8vw;
-    }
-
-    .hide-from-mobile {
-        display: block;
-    }
-
     #footer-mobile {
         display: none;
     }
@@ -282,6 +274,18 @@ footer {
     .section-margin {
         margin-left: 10vw;
         margin-right: 10vw;
+    }
+
+     .margin-bottom {
+        margin-bottom: 8vw;
+    }
+
+    .hide-from-mobile {
+        display: block;
+    }
+
+    .yellow-background {
+        background-color: var(--yellow);
     }
 }
 
