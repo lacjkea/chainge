@@ -80,7 +80,7 @@ p {
     line-height: 1.5;
 }
 
-#text-container {
+.homepage #text-container {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
 }
@@ -184,6 +184,18 @@ footer {
     padding: 1.8rem 0;
     text-align: center;
     font-size: 1.5rem;
+}
+
+.community #contact-us {
+    background-color: var(--terciary-green);
+    padding: 6vw 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.community #mail-icon {
+    width: 18vw;
 }
 
 
