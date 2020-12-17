@@ -198,6 +198,10 @@ footer {
     width: 18vw;
 }
 
+.about #pictures img {
+    width: 100%;
+}
+
 
 /* DESKTOP DESIGN */
 @media only screen and (min-width: 899px) {
@@ -340,7 +344,7 @@ footer {
         z-index: -1;
     }
 
-     .about #pictures #c {
+    .about #pictures #c {
         left: -4vw;
         top: -23vw;
         z-index: -1;
