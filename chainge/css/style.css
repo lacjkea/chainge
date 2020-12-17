@@ -313,6 +313,38 @@ footer {
     .community #mail-icon {
         width: 6vw;
     }
+
+    .about #pictures {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about #pictures img {
+        width: 30vw;
+        position: relative;
+    }
+
+    .about #pictures #a {
+        left: -10vw;
+        z-index: -1;
+    }
+
+    .about #pictures a:hover {
+        z-index: 100;
+    }
+
+    .about #pictures #b {
+        top: -10vw;
+        left: 6vw;
+        z-index: -1;
+    }
+
+     .about #pictures #c {
+        left: -4vw;
+        top: -23vw;
+        z-index: -1;
+    }
 }
 
 /* ALL CLASSES and ANIMATIONS */
