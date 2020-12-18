@@ -243,9 +243,15 @@ footer {
     }
 
     #nav-ul-desktop {
-        width: 40vw;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(10vw, 1fr));
+        width: auto;
+
+    }
+
+    nav {
         display: flex;
-        justify-content: flex-end;
+
     }
 
     li {
@@ -274,12 +280,12 @@ footer {
     }
 
     h2 {
-        font-size: 6rem;
+        font-size: 2vw;
         margin-bottom: 2vw;
     }
 
     p {
-        font-size: 4rem;
+        font-size: 1.2vw;
         text-align: left;
         margin: 0;
     }
@@ -376,15 +382,15 @@ footer {
     }
 
     .partners #partner-logo {
-    width: 20%;
-    margin: 0;
-}
+        width: 20%;
+        margin: 0;
+    }
 
-.partners #partners-logos {
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 2vw 0;
-}
+    .partners #partners-logos {
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 2vw 0;
+    }
 }
 
 /* ALL CLASSES and ANIMATIONS */
